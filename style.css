@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #fff8dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+.container {
+  position: absolute;
+  width: 1260px;
+  height: 700px;
+  background: hsl(234, 17%, 12%);
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  top: 8rem;
+  left: 28%;
+}
+.content h1 {
+  font-size: 1.5rem;
+  color: cornsilk;
+  font-family: "Red Hat Text", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  word-spacing: 0.9rem;
+  margin-bottom: 5rem;
+  padding: 0 6rem;
+}
+.content .boxes {
+  display: flex;
+  gap: 20px;
+}
+.box {
+  text-align: center;
+}
+.box p {
+  height: 120px;
+  width: 120px;
+  margin-bottom: 1.5rem;
+
+  background: hsl(235, 16%, 14%);
+  background: linear-gradient(
+    to bottom,
+    hsl(237, 20%, 20%) 50%,
+    hsl(237, 16%, 25%) 50%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  color: hsl(345, 100%, 57%);
+}
+
+.box span {
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: lighter;
+  opacity: 0.8;
+}
+
+.footer {
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 28%;
+  background: url(images/pattern-hills.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 29px;
+}
+
+.img-wrapper i {
+  font-size: 1.8rem;
+  color: gray;
+  cursor: pointer;
+}
+
+.img-wrapper i:hover {
+  color: hsl(345, 95%, 68%);
+}
+
+@media (max-width: 400px) {
+  body {
+    background: hsl(234, 17%, 12%);
+  }
+  .container {
+    position: absolute;
+    width: 750px;
+    height: 940px;
+    top: 1rem;
+  }
+
+  .content h1 {
+    font-size: 2.2rem;
+    padding: 0 0.5rem;
+  }
+
+  .box p {
+    width: 110px;
+    height: 110px;
+    font-size: 3rem;
+  }
+  .footer img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .footer i {
+    font-size: 2.5rem;
+  }
+}
